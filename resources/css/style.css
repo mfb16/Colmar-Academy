@@ -1,0 +1,484 @@
+
+    html {
+      font-size: 16px;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #454545;
+    }
+
+
+    h1{
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 2.5rem;
+      font-weight: 900;
+      line-height: 1.2;
+    }
+
+    h2{
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    h3{
+      font-size: 0.8125rem;
+      font-weight: normal;
+      color: #636260;
+    }
+
+    p {
+       font-size: 1rem;
+       font-weight: 300;
+       color: #636260;
+     }
+
+
+/*HEADER*/
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      font-size: 18px;
+      padding: 0 24px;
+    }
+
+    header .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    header .logo img{
+        height: 42px;
+    }
+
+    header p{
+      font-weight: 300;
+    }
+
+    header p strong{
+      font-family: "Nunito Sans", sans-serif;
+      font-weight: 700;
+      color: #454545;
+    }
+
+    .desktop a{
+      text-decoration: none;
+      color: black;
+      padding-right: 16px;
+    }
+
+    .desktop a:last-child{
+      padding-right: 0;
+    }
+
+    .desktop a:hover{
+      color: #3DB6C4
+    }
+
+    .mobile{
+      display: none;
+    }
+
+    @media only screen and (max-width:680px) {
+        header{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        header .logo, .desktop {
+          display: none;
+        }
+
+        .mobile{
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: space-around;
+        }
+        .mobile img{
+          height: 2.5rem;
+        }
+    }
+
+/*Section 1*/
+
+  .banner{
+    display: flex;
+    background-color: lightgray;
+  }
+
+  .image{
+    width: 60%;
+    padding: 32px 24px;
+  }
+
+  .image img{
+    width: 100%;
+    height: auto;
+  }
+
+  .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+  }
+
+  button {
+    display: block;
+    width: 85%;
+    background-color: #454443;
+    color: white;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition-property: background-color;
+    transition-duration: 500ms;
+  }
+
+  button:hover{
+    background-color: #3DB6C4;
+    }
+
+  @media only screen and (max-width:680px) {
+
+    .banner{
+      flex-direction: column;
+      padding-bottom: 32px;
+    }
+
+    .image{
+      width: 100%;
+      padding: 0;
+    }
+
+    .image img{
+      width: 100%;
+    }
+
+    .button{
+      padding-right: 16px;
+    }
+
+    button{
+      background-color: gray;
+      margin: auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .text{
+      padding: 32px 0 24px 16px;
+      width: auto;
+    }
+
+    .text h1{
+      padding-bottom: 32px;
+    }
+
+    .text p{
+      padding-bottom: 24px;
+    }
+
+  }
+
+/*Section 2-*/
+
+  .section-2 {
+      display: flex;
+      padding: 32px 0 32px 24px;
+    }
+
+  .container-1{
+      width: 60%;
+      padding-right: 24px;
+    }
+
+  .container-1 img{
+      width: 100%;
+      height: auto;
+    }
+
+  .container-2 {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+    }
+
+  .update{
+      display: flex;
+      padding: 0 0 16px 16px;
+    }
+
+  .update:last-child{
+      background-color:lightgray;
+      padding-top: 16px;
+    }
+
+  .padding img{
+    margin-bottom: 32px;
+  }
+
+  .quote{
+    font-family: 'Calibri';
+    font-weight: 400;
+  }
+
+  .photo{
+      width: 35%;
+      padding-right: 16px;
+    }
+
+  .photo img{
+      width: 100%;
+      height: auto;
+    }
+
+  .info{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 65%;
+    }
+
+  .info p{
+    padding: 8px 0;
+  }
+
+  .info a{
+      text-decoration: none;
+      color: #3DB6C4;
+      font-weight: 400;
+    }
+
+  .info a:hover{
+      color: #3D46C4;
+    }
+
+  #mobile{
+      display: none;
+    }
+
+  @media only screen and (max-width:680px) {
+
+      .section-2 {
+        margin:0;
+        padding: 16px;
+      }
+
+      #hide {
+        display: none;
+      }
+
+      .container-2 {
+        width:100%;
+      }
+
+      .update {
+        padding: 0;
+        flex-direction: column;
+        margin-bottom: 64px;
+      }
+
+      .info {
+        margin-left: 16px;
+        padding-top: 64px;
+      }
+
+      .photo {
+        width: 100%;
+        padding-right: 0px;
+      }
+
+      .photo img{
+        display: none;
+      }
+
+      #mobile{
+        display: block;
+      }
+
+      .update:last-child{
+        background-color: inherit;
+        margin-bottom: 32px;
+      }
+
+    }
+
+/* Section 3- Start Learning */
+
+  .section-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+    padding: 32px 40px 32px 72px;
+  }
+
+  .section-3 h1{
+    padding-bottom: 32px;
+  }
+
+  .section-3 h2{
+    padding-left: 16px;
+  }
+
+  .section-3 p{
+    padding: 8px 16px;
+  }
+
+  .courses{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .course{
+    display: flex;
+    flex-direction: column;
+    margin-right: 32px;
+    margin-bottom: 32px;
+    background-color: white;
+    width: 30%;
+    padding-bottom: 24px;
+  }
+
+  .course img{
+    height: auto;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .courses-mobile{
+    display: none;
+  }
+
+  @media only screen and (max-width:680px) {
+    .section-3{
+      display: block;
+      background-color: inherit;
+      padding: 32px 0;
+    }
+
+    .section-3 h1{
+      padding-bottom: 16px;
+      text-align: center;
+    }
+
+    .courses{
+      display: none;
+    }
+
+    .courses-mobile{
+      margin: auto;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      color: black;
+    }
+
+    .courses-mobile div{
+      display:block;
+      background-color: lightgray;
+      padding: 16px 16px 24px 16px;
+      margin-bottom: 8px;
+    }
+  }
+
+/* Section 4 */
+  .section-4{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 32px 0 32px 24px;
+    }
+
+  .containers{
+      display: flex;
+      width: 100%;
+    }
+
+  .container-1 video{
+      width: 100%;
+      height: auto;
+      margin-bottom: 24px;
+    }
+
+  .exhibit{
+    display: flex;
+    padding: 16px 0 16px 16px;
+    width: auto;
+  }
+
+  .exhibit:first-child{
+      background-color:lightgray;
+    }
+
+
+
+
+
+  @media only screen and (max-width:680px) {
+
+      .section-4{
+          width: 100%;
+          padding: 32px 0 24px 0;
+          margin: 0;
+        }
+
+        .container-1{
+          width: 100%;
+          padding:0;
+        }
+
+        .container-1 h2, .container-1 p{
+          display: none;
+        }
+
+        .section-4 h1{
+          margin-bottom: 16px;
+          text-align: center;
+        }
+
+      }
+
+/* FOOTER */
+
+  footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px 50px 24px;
+  }
+
+  .copyright, .terms{
+    display: flex;
+  }
+
+  .btn-nav{
+    text-decoration: none;
+    padding-left: 16px;
+    color: #636260;
+  }
+
+  .btn-nav:hover{
+    color: #3DB6C4;
+  }
+
+
+  @media only screen and (max-width:680px) {
+
+    footer{
+      padding: 16px ;
+    }
+
+    .terms{
+      display:none;
+    }
+  }
